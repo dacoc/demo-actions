@@ -9,26 +9,10 @@ jobs:
         - name: Checkout repository
           uses: actions/checkout@v4
 
-        - name: Install Cowsay program
-          run: sudo apt-get install cowsay -y
-
-        - name: Execute  
-          run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt          
-
-        - name: Test file exist
-          run: |
-            grep -i "dragon" dragon.txt
-
-        - name: Read file 
-          run: |
-            cat dragon.txt
-
         - name: List Repo Files
           run: |
-            ls -ltra           
+            ls -ltra  
 
-#        - name: List files
-#          run: ls
-
-#        - name: Read file
-#          run: cat README.md
+        - name: Executing Shell Script
+          run: ./ascci-script.sh
+         
