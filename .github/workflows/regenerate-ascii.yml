@@ -25,7 +25,7 @@ jobs:
 
         - name: List Repo Files
           run: |
-            run: ls -ltra           
+            ls -ltra           
 
 #        - name: List files
 #          run: ls
